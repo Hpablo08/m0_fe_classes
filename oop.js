@@ -100,18 +100,26 @@ class Hobbit {
   this.hasRing= false
 }
 
-celebrateBirthday(yay){
-for (var i = 0; i< 102; i++) {
+celebrateBirthday(yay)
+ {
+
+   if (this.name === "Frodo")
+   {
+     this.hasRing = true}
+   ;
 
 if (yay > 33) {
-  this.isAdult=true;
+  this.isAdult=true; }
 
-} }} }
+  if (yay >= 101)
+  {
+    this.isOld = true}
+;
 
+} }
 
-var hob1 = new Hobbit ("Piper","tall")
+var hob1 = new Hobbit ("Frodo","tall");
+console.log(hob1);
 
+hob1.celebrateBirthday(130);
 console.log(hob1)
-
-hob1.celebrateBirthday(34);
-console.log(yay)
