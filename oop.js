@@ -3,13 +3,46 @@
 // it should have a color property, that is silver by default
 // it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
 
+class Unicorn
+{
+constructor(name){
+this.name = name;
+this.color = "silver";
+this.line = "-"
+}
 
+say(squiggly) {
+  this.name=
+  Unicorn.upshift("*~*");
+  Unicorn.push("*~*");
+}
+}
+ var unicorn1 = new Unicorn ("Ploppsy");
+ console.log(unicorn1)
 
 // Write a class called Vampire
 // it should have a dynamic name property
 // it should have a pet property, that is a bat, by default BUT it could be dynamic if info is passed in initially
 // it should have a thirsty property, that is true by default
 // it should have a drink method. When called, the thirsty property changes to false
+class Vampire
+{
+constructor(name){
+this.name = name;
+this.pet = "Bat";
+this.thirst = true
+}
+
+drink(thirsty) {
+  this.thirst= thirsty;
+}
+}
+
+var vamp1= new Vampire ("Suckula")
+console.log(vamp1)
+
+vamp1.drink(false)
+console.log(vamp1)
 
 
 
@@ -21,6 +54,23 @@
 //  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
   // HINT: This requires you to use your knowledge from the conditionals lesson
 
+class Dragon {
+  constructor(name,rider,color,eat){
+
+this.name=name;
+this.rider=rider;
+this.color=color;
+this.isHungry= true;
+var eat= 4
+}
+
+eat(Hunger){
+this.isHungry= false ;
+if (eat>= 4)
+}}
+
+var drag1= new Dragon ("Drogo","Mr Man","red",4)
+console.log(drag1)
 
 
 //  BIG CHALLNEGE: Write a Hobbit class
@@ -31,3 +81,16 @@
 //  it should have an isAdult property (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 //  it should have an isOld property that defaults to false. once a Hobbit is 101, it is old.
 //  it should have a hasRing property. If the Hobbit's name is "Frodo", true, if not, false.
+
+class Hobbit {
+  constructor (name,disposition){
+
+
+
+
+
+
+
+
+  }
+}
