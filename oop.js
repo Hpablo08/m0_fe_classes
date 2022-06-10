@@ -61,21 +61,23 @@ console.log(vamp1)
   // HINT: This requires you to use your knowledge from the conditionals lesson
 
 class Dragon {
-  constructor(name, rider, color,eat) {
+  constructor(name, rider, color) {
 this.name = name;
 this.rider= rider;
 this.color= color;
 this.isHungry= true;
-this.eat = eat
+
       }
 
 eat(hunger) {
-  this.isHungry=false ;}
-}
-     if (this.isHungry>= 4)
+     if (hunger>= 4) {
+     this.isHungry= false;
+   } } }
 
+var drag1 = new Dragon("Toothless","Ben","black");
+console.log(drag1);
 
-var drag1 = new Dragon("Toothless","Ben","black", 4)
+drag1.eat(4);
 console.log(drag1)
 
 
@@ -87,3 +89,29 @@ console.log(drag1)
 //  it should have an isAdult property (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 //  it should have an isOld property that defaults to false. once a Hobbit is 101, it is old.
 //  it should have a hasRing property. If the Hobbit's name is "Frodo", true, if not, false.
+
+class Hobbit {
+  constructor(name,disposition) {
+  this.name=name;
+  this.disposition=disposition;
+  this.age=0;
+  this.isAdult= false;
+  this.isOld= false;
+  this.hasRing= false
+}
+
+celebrateBirthday(yay){
+for (var i = 0; i< 102; i++) {
+
+if (yay > 33) {
+  this.isAdult=true;
+
+} }} }
+
+
+var hob1 = new Hobbit ("Piper","tall")
+
+console.log(hob1)
+
+hob1.celebrateBirthday(34);
+console.log(yay)
